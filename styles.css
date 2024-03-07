@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background: #000000;
     color: var(--light-gray);
@@ -39,8 +40,6 @@ nav{
     width: 100%;
     justify-content: start;
     align-items: center;
-    top: 0;
-    left: 0;
     transition: 0.6s;
     margin: 0 0 1.5rem 0;
     z-index: 100;
@@ -150,21 +149,21 @@ nav{
     position: absolute;
     rotate: -90deg;
     top: 35%;
-    left: 45%;
+    right: 15%;
 }
 
 .designer{
     position: absolute;
     rotate: -90deg;
     top: 75%;
-    left: 57%;
+    right: 5%;
 }
 
 .artist{
     position: absolute;
     rotate: -90deg;
     top: 20%;
-    left: 70%;
+    right: 0%;
 }
 
 .circle-container{
@@ -263,4 +262,17 @@ nav{
 
 .brief-circle img{
     width: 2rem;
+}
+
+/* Add a media query for small devices */
+@media screen and (max-width: 768px) {
+    nav {
+      justify-content: space-between;
+    }
+    .brief-about_me{
+        margin: 4rem 0 2rem 0;
+    }
+    .brief-circle {
+      display: none;
+    }
 }

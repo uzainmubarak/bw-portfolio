@@ -30,3 +30,10 @@ body{
     font-style: italic;
     font-size: 25px;
 }
+
+@media screen and (max-width: 768px){
+    .bio{
+        margin: 2rem 0;
+
+    }
+}
